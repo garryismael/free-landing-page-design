@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('./Inter/Inter-VariableFont_slntwght.ttf') format('truetype');
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,11 +11,14 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
+}
+
+.flex {
+	display: flex;
 }
 
 .header {
-	height: 746px;
 	background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
 }
 
@@ -20,12 +28,23 @@ body {
 }
 
 .nav-container {
-	padding: 35px 0 18px 0;
+	padding: 22px 0 12px 0;
 	border-bottom: 1px solid rgba(33, 123, 244, 0.1);
 }
 
 header section.wrapper {
 	gap: 150px;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: calc(100vh - 90px);
 }
 
 .row {
@@ -69,7 +88,6 @@ ul.nav-menu {
 }
 
 ul.nav-menu li a {
-	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 14px;
@@ -105,7 +123,7 @@ ul.nav-menu li a {
 	margin-right: 42px;
 	width: 105px;
 	height: 32px;
-	font-family: 'Inter', sans-serif;
+
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 14px;
@@ -115,12 +133,9 @@ ul.nav-menu li a {
 	padding-left: 15px;
 }
 
-.content-header {
-	justify-content: space-between;
-}
 .text-container {
 	width: 515px;
-	height: 366px;
+	gap: 30px;
 }
 
 p.netbook {
@@ -128,7 +143,6 @@ p.netbook {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 12px;
-	color: white;
 	color: #217bf4;
 	padding: 12px 30px;
 	background: rgba(33, 123, 244, 0.1);
@@ -137,7 +151,6 @@ p.netbook {
 }
 
 .text-container h1 {
-	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 66px;
@@ -147,7 +160,6 @@ p.netbook {
 }
 
 .text-container .info {
-	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
@@ -175,11 +187,6 @@ p.netbook {
 	border-radius: 14px;
 }
 
-.img-container img {
-	width: 585.52px;
-	height: 501.47px;
-}
-
 section.about-us {
 	width: 1170px;
 	height: 576px;
@@ -188,6 +195,7 @@ section.about-us {
 
 .content-text-question {
 	width: 406px;
+	margin-bottom: 80px;
 }
 
 .what-question {
@@ -951,3 +959,4 @@ footer a:last-of-type {
 .gap-img {
 	gap: 8px;
 }
+
